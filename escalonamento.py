@@ -238,8 +238,3 @@ esc_x = esc_x3 + valor_x
 print(f'X =', esc_x)
 print(f'Y =', esc_y)
 print(f'Z =', esc_z)
-
-
-
-
-
