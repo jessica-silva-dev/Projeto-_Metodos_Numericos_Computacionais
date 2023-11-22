@@ -83,11 +83,6 @@ for sx, sfx, sxfx, sx2 in zip(x, fx, coluna_xfx, coluna_xelevado2):
     soma_xfx += sxfx
     soma_x2 += sx2
 
-print(soma_x)
-print(soma_fx)
-print(soma_xfx)
-print(soma_x2)
-
 # CALCULANDO O VALOR DE A
 
 valor_A = (soma_x * soma_xfx - soma_x2 * soma_fx) / (soma_x**2 - m * soma_x2)
@@ -115,15 +110,13 @@ print(" ")
 sleep(2)
 print(f"{laranja}Participantes do Grupo: {reset}")
 sleep(1)
-print(f"{verde}Tamires Dionizia De Jesus Bernardes --> RA: {reset}")
+print(f"{verde}Tamires Dionizia De Jesus Bernardes --> RA: 3023200548{reset}")
 sleep(1)
 print(f"{verde}Jéssica De Jesus Da Silva --> RA: 3023200546{reset}")
 sleep(1)
 print(f"{verde}Lavínia De Souza Freitas --> RA: 3023202645{reset}")
-"""
 sleep(1)
 print(f"{verde}Riani Katelin Da Silva --> RA: {reset}")
-"""
 sleep(1)
 print(f"{verde}Marina Romera Amorim --> RA: 3023108400{reset}")
 sleep(1)

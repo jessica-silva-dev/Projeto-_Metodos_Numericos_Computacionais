@@ -1,30 +1,47 @@
 # Determinando o coeficiente de correlação de Pearson
 
+from time import sleep
+from colorama import Fore, Style, init
+init()
+
+verde = Fore.LIGHTGREEN_EX
+azul = Fore.BLUE
+branco = Fore.LIGHTWHITE_EX
+amarelo = Fore.LIGHTYELLOW_EX
+verde_agua = Fore.LIGHTCYAN_EX
+laranja = Fore.LIGHTRED_EX
+reset = Style.RESET_ALL
+
 # DESCRIÇÃO PARA O USUÁRIO
 
 print(" ")
-print("Projeto em Sistemas Inteligentes")
+sleep(2)
+print(f"{branco}Projeto em Sistemas Inteligentes {reset}")
 print(" ")
-print("Direção: Prof° Sergio João Guimaraes Da Silva")
+sleep(1)
+print(f"{branco}Direção: Prof° Sergio João Guimaraes Da Silva{reset}")
 print(" ")
-print("Método de Pearson")
+sleep(2)
+print(f"{branco}Método: Pearson {reset}")
 print(" ")
+sleep(1)
 
 # DADOS DO USUÁRIO
 
-x1 = float(input('Digite o valor de X: '))
-x2 = float(input('Digite o valor de X: '))
-x3 = float(input('Digite o valor de X: '))
-x4 = float(input('Digite o valor de X: '))
-x5 = float(input('Digite o valor de X: '))
-x6 = float(input('Digite o valor de X: '))
-y1 = float(input('Digite o valor de Y: '))
-y2 = float(input('Digite o valor de Y: '))
-y3 = float(input('Digite o valor de Y: '))
-y4 = float(input('Digite o valor de Y: '))
-y5 = float(input('Digite o valor de Y: '))
-y6 = float(input('Digite o valor de Y: '))
+x1 = float(input(f"{verde_agua}Digite o valor de X: {reset}"))
+x2 = float(input(f"{verde_agua}Digite o valor de X: {reset}"))
+x3 = float(input(f"{verde_agua}Digite o valor de X: {reset}"))
+x4 = float(input(f"{verde_agua}Digite o valor de X: {reset}"))
+x5 = float(input(f"{verde_agua}Digite o valor de X: {reset}"))
+x6 = float(input(f"{verde_agua}Digite o valor de X: {reset}"))
+y1 = float(input(f"{verde_agua}Digite o valor de Y: {reset}"))
+y2 = float(input(f"{verde_agua}Digite o valor de Y: {reset}"))
+y3 = float(input(f"{verde_agua}Digite o valor de Y: {reset}"))
+y4 = float(input(f"{verde_agua}Digite o valor de Y: {reset}"))
+y5 = float(input(f"{verde_agua}Digite o valor de Y: {reset}"))
+y6 = float(input(f"{verde_agua}Digite o valor de Y: {reset}"))
 total_linhas = 6
+sleep(1)
 
 # MONTANDO AS COLUNAS
 
@@ -81,7 +98,7 @@ m_x6y6 = x6_m * y6_m
 
 # Somando os resultados multiplicados
 
-xy_soma = m_x1y1 + m_x2y2 + m_x3y3 + m_x4y4 +m_x5y5 + m_x6y6
+xy_soma = m_x1y1 + m_x2y2 + m_x3y3 + m_x4y4 + m_x5y5 + m_x6y6
 
 # Calculando o resultado da media de X elevado ao quadrado
 
@@ -119,29 +136,47 @@ resultado = float(resultadoo)
 # Condição se o resultado for = 0
 
 if raiz == 0:
-    print("Não é possível dividir por zero")
+    print(f"{laranja}Não é possível dividir por zero{reset}")
     print(" ")
-    print("Grupo: Jéssica de Jesus Da Silva ")
-    print("       Tamires Dionizia De Jesus Benardes ")
-    print("       Lavínia De Souza Freitas ")
-    print("       Marina Romera Amorim ")
-    print("       Riani Katelin Da Silva ")
+    sleep(2)
+    print(f"{laranja}Participantes do Grupo: {reset}")
+    sleep(1)
+    print(f"{verde}Tamires Dionizia De Jesus Bernardes --> RA: 3023200548{reset}")
+    sleep(1)
+    print(f"{verde}Jéssica De Jesus Da Silva --> RA: 3023200546{reset}")
+    sleep(1)
+    print(f"{verde}Lavínia De Souza Freitas --> RA: 3023202645{reset}")
+    sleep(1)
+    print(f"{verde}Riani Katelin Da Silva --> RA: {reset}")
+    sleep(1)
+    print(f"{verde}Marina Romera Amorim --> RA: 3023108400{reset}")
+    sleep(1)
+    print(f"{verde_agua}Créditos: Ahmad Abouleinin{reset}")
     print(" ")
-    input("Para sair aperte 'Enter'")
-
+    sleep(2)
+    input(f"{laranja}Para sair aperte 'Enter'!{reset}")
+    print(" ")
 
 # Exibindo o resultado final
 
 print(" ")
-print("Calculando....")
+print(f"{laranja}Calculando...{reset}")
 print(" ")
-print("O coeficiente da correlação de Pearson entre X e Y é: ", resultado)
-
+sleep(2)
+print(f"{verde_agua}O coeficiente da correlação de Pearson entre X e Y é: {resultado:.5f}")
 print(" ")
-print("Grupo: Jéssica de Jesus Da Silva ")
-print("       Tamires Dionizia De Jesus Benardes ")
-print("       Lavínia De Souza Freitas ")
-print("       Marina Romera Amorim ")
-print("       Riani Katelin Da Silva ")
+sleep(2)
+print(f"{laranja}Participantes do Grupo: {reset}")
+sleep(1)
+print(f"{verde}Tamires Dionizia De Jesus Bernardes --> RA: 3023200548{reset}")
+sleep(1)
+print(f"{verde}Jéssica De Jesus Da Silva --> RA: 3023200546{reset}")
+sleep(1)
+print(f"{verde}Lavínia De Souza Freitas --> RA: 3023202645{reset}")
+sleep(1)
+print(f"{verde}Riani Katelin Da Silva --> RA: {reset}")
+sleep(1)
+print(f"{verde}Marina Romera Amorim --> RA: 3023108400{reset}")
 print(" ")
-input("Para sair aperte 'Enter'")
+sleep(1)
+input(f"{laranja}Para sair aperte 'Enter'!{reset}")

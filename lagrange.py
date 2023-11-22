@@ -1,23 +1,40 @@
 # MÉTODO DE LAGRANGE - INTERPOLAÇÃO POLINOMIAL
 
+from time import sleep
+from colorama import Fore, Style, init
+init()
+
+
+verde = Fore.LIGHTGREEN_EX
+azul = Fore.BLUE
+branco = Fore.LIGHTWHITE_EX
+amarelo = Fore.LIGHTYELLOW_EX
+verde_agua = Fore.LIGHTCYAN_EX
+laranja = Fore.LIGHTRED_EX
+reset = Style.RESET_ALL
+
 # DESCRIÇÃO PARA O USUÁRIO
 
 print(" ")
-print("Projeto em Sistemas Inteligentes")
+sleep(2)
+print(f"{branco}Projeto em Sistemas Inteligentes {reset}")
 print(" ")
-print("Direção: Prof° Sergio João Guimaraes Da Silva")
+sleep(1)
+print(f"{branco}Direção: Prof° Sergio João Guimaraes Da Silva {reset}")
 print(" ")
-print("Método de Lagrange Interpolação Polinomial")
+sleep(2)
+print(f"{branco}Método: Lagrange Interpolação Polinomial {reset}")
 print(" ")
+sleep(1)
 
 # ENTRADA PARA OS USUÁRIOS
 
-a = float(input("Digite o valor de X: "))     #X0   
-b = float(input("Digite o valor de X: "))     #X1
-c = float(input("Digite o valor de X: "))     #X2
-d = float(input("Digite o valor de f(x): "))  #Fx0
-e = float(input("Digite o valor de f(x): "))  #Fx1
-f = float(input("Digite o valor de f(x): "))  #Fx2
+a = float(input(f"{verde_agua}Digite o valor de X: {reset}"))     #X0
+b = float(input(f"{verde_agua}Digite o valor de X: {reset}"))     #X1
+c = float(input(f"{verde_agua}Digite o valor de X: {reset}"))     #X2
+d = float(input(f"{verde_agua}Digite o valor de f(x): {reset}"))  #Fx0
+e = float(input(f"{verde_agua}Digite o valor de f(x): {reset}"))  #Fx1
+f = float(input(f"{verde_agua}Digite o valor de f(x): {reset}"))  #Fx2
 
 # CONSTANTE
 
@@ -126,17 +143,26 @@ while mmc % sl0b != 0 or mmc % sl1b != 0 or mmc % sl2b != 0:
 
 if sl0b and sl1b and sl2b == 0:
   print(" ")
-  print("Impossível dividir por 0!")
+  print(f"{laranja}Impossível dividir por 0!{reset}")
   print(" ")
-  print("Tente outro valor!")
+  print(f"{laranja}Tente outro valor!{reset}")
   print(" ")
-  print("Grupo: Jéssica De Jesus Da Silva ")
-  print("       Tamires Dionizia De Jesus Benardes ")
-  print("       Lavínia De Souza Freitas ")
-  print("       Marina Romera Amorim ")
-  print("       Riani Katelin Da Silva ")
+  sleep(2)
+  print(f"{laranja}Participantes do Grupo: {reset}")
+  sleep(1)
+  print(f"{verde}Tamires Dionizia De Jesus Bernardes --> RA: 3023200548{reset}")
+  sleep(1)
+  print(f"{verde}Jéssica De Jesus Da Silva --> RA: 3023200546{reset}")
+  sleep(1)
+  print(f"{verde}Lavínia De Souza Freitas --> RA: 3023202645{reset}")
+  sleep(1)
+  print(f"{verde}Riani Katelin Da Silva --> RA: {reset}")
+  sleep(1)
+  print(f"{verde}Marina Romera Amorim --> RA: 3023108400{reset}")
+  sleep(1)
+  print(f"{verde_agua}Créditos: Ahmad Abouleinin{reset}")
   print(" ")
-  input("Para sair aperte 'Enter'")
+  input(f"{laranja}Para sair aperte 'Enter'{reset}")
 
 # SOMATORIA DE L0 L1 e L2 DIVIDIDO POR MMC
 
@@ -199,18 +225,28 @@ soma_fim = str(soma_fimr)
 # EXIBINDO O RESULTADO FINAL DA INTERPOLAÇÃO
 
 print(" ")
-print("Calculando.... ")
+print(f"{laranja}Calculando.... {reset}")
 print(" ")
 
-print(f"         {soma_x}x² {soma_meio}x + {soma_fim}")
-print(f"P2(x) = -----------------------")
-print(f"                {mmc}")
-print("_" * 75)
-print("Grupo: Jéssica de Jesus Da Silva ")
-print("       Tamires Dionizia De Jesus Benardes ")
-print("       Lavínia De Souza Freitas ")
-print("       Marina Romera Amorim ")
-print("       Riani Katelin Da Silva ")
+print(f"{verde}         {soma_x}x² {soma_meio}x + {soma_fim}{reset}")
+print(f"{verde}P2(x) = -----------------------{reset}")
+print(f"{verde}                {mmc}{reset}")
 print(" ")
-input("Para sair aperte 'Enter'")
+sleep(2)
+print(f"{laranja}Participantes do Grupo: {reset}")
+sleep(1)
+print(f"{verde}Tamires Dionizia De Jesus Bernardes --> RA: 3023200548{reset}")
+sleep(1)
+print(f"{verde}Jéssica De Jesus Da Silva --> RA: 3023200546{reset}")
+sleep(1)
+print(f"{verde}Lavínia De Souza Freitas --> RA: 3023202645{reset}")
+sleep(1)
+print(f"{verde}Riani Katelin Da Silva --> RA: {reset}")
+sleep(1)
+print(f"{verde}Marina Romera Amorim --> RA: 3023108400{reset}")
+sleep(1)
+print(f"{verde_agua}Créditos: Ahmad Abouleinin{reset}")
+print(" ")
+sleep(2)
+input(f"{laranja}Para sair aperte 'Enter'{reset}")
 print(" ")

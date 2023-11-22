@@ -1,28 +1,45 @@
 # MÉTODO DE CRAMER
 
+# IMPORTANDO BLIBIOTECAS
+from time import sleep
+from colorama import Fore, Style, init
+
+init()
+
+# DEFININDO AS VARIÀVEIS DAS CORES
+verde = Fore.LIGHTGREEN_EX
+azul = Fore.BLUE
+laranja = Fore.LIGHTRED_EX
+amarelo = Fore.YELLOW
+reset = Style.RESET_ALL
+
 # DESCRIÇÃO PARA O USUÁRIO
 
 print(" ")
-print("Projeto em Sistemas Inteligentes")
+sleep(2)
+print(f"{laranja}Projeto em Sistemas Inteligentes {reset}")
 print(" ")
-print("Direção: Prof° Sergio João Guimaraes Da Silva")
+sleep(2)
+print(f"{laranja}Direção: Prof° Sergio João Guimaraes Da Silva {reset}")
 print(" ")
-print("Método de Cramer")
+sleep(2)
+print(f"{laranja}Método: Cramer {reset}")
 print(" ")
+sleep(2)
 
 # ENTRADA DE DADOS DO USUÁRIO
-a = float(input("Digite o valor de X: "))
-b = float(input("Digite o valor de Y: "))
-c = float(input("Digite o valor de Z: "))
-d = float(input("Qual é o resultado da primeira equação?\n"))
-e = float(input("Digite o valor de X: "))
-f = float(input("Digite o valor de Y: "))
-g = float(input("Digite o valor de Z: "))
-h = float(input("Qual é o resultado da primeira equação?\n"))
-i = float(input("Digite o valor de X: "))
-j = float(input("Digite o valor de Y: "))
-k = float(input("Digite o valor de Z: "))
-l = float(input("Qual é o resultado da primeira equação?\n"))
+a = float(input(f"{azul}Digite o valor de X: {reset}"))
+b = float(input(f"{azul}Digite o valor de Y: {reset}"))
+c = float(input(f"{azul}Digite o valor de Z: {reset}"))
+d = float(input(f"{azul}Qual é o resultado da equação?\n{reset}"))
+e = float(input(f"{azul}Digite o valor de X: {reset}"))
+f = float(input(f"{azul}Digite o valor de Y: {reset}"))
+g = float(input(f"{azul}Digite o valor de Z: {reset}"))
+h = float(input(f"{azul}Qual é o resultado da equação?\n{reset}"))
+i = float(input(f"{azul}Digite o valor de X: {reset}"))
+j = float(input(f"{azul}Digite o valor de Y: {reset}"))
+k = float(input(f"{azul}Digite o valor de Z: {reset}"))
+l = float(input(f"{azul}Qual é o resultado da equação?\n{reset}"))
 
 # CALCULANDO O DETERMINANTE INICIAL
 # MULTIPLICANDO AS DIAGONAIS
@@ -116,17 +133,24 @@ det_z = soma_z - soma_z1
 # condição
 if det_inicial == 0:
     print(" ")
-    print("Não é possível dividir por 0!")
+    print(f"{laranja}Não é possível dividir por 0!{reset}")
     print(" ")
-    print("Tente outro valor!")
+    sleep(2)
+    print(f"{laranja}Tente outro valor!{reset}")
     print(" ")
-    print("Grupo: Jéssica De Jesus Da Silva ")
-    print("       Tamires Dionizia De Jesus Benardes ")
-    print("       Lavínia De Souza Freitas ")
-    print("       Marina Romera Amorim ")
-    print("       Riani Katelin Da Silva ")
+    sleep(2)
+    print(f"{azul}Grupo: Jéssica De Jesus Da Silva {reset}")
+    sleep(1)
+    print(f"{azul}       Tamires Dionizia De Jesus Benardes {reset}")
+    sleep(1)
+    print(f"{azul}       Lavínia De Souza Freitas {reset}")
+    sleep(1)
+    print(f"{azul}       Marina Romera Amorim {reset}")
+    sleep(1)
+    print(f"{azul}       Riani Katelin Da Silva {reset}")
     print(" ")
-    input("Para sair aperte 'Enter'")
+    sleep(1)
+    input(f"{laranja}Para sair aperte 'Enter'{reset}")
 
 # RESULTADO DE X
 valor_x = det_x / det_inicial
@@ -138,17 +162,28 @@ valor_y = det_y / det_inicial
 valor_z = det_z / det_inicial
 
 print(" ")
-print("Calculando....")
+print(f"{laranja}Calculando....{reset}")
 print(" ")
-print(f"X =", valor_x)
-print(f"Y =", valor_y)
-print(f"Z =", valor_z)
+sleep(3)
+
+# EXIBINDO O RESULTADO FINAL
+print(f"{verde}X = {valor_x}{reset}")
+print(f"{verde}Y = {valor_y}{reset}")
+print(f"{verde}Z = {valor_z}{reset}")
 print(" ")
-print("Grupo: Jéssica de Jesus Da Silva ")
-print("       Tamires Dionizia De Jesus Benardes ")
-print("       Lavínia De Souza Freitas ")
-print("       Marina Romera Amorim ")
-print("       Riani Katelin Da Silva ")
+sleep(2)
+print(f"{laranja}Participantes do Grupo: {reset}")
+sleep(1)
+print(f"{azul}Jéssica de Jesus Da Silva --> RA: 3023200546{reset}")
+sleep(1)
+print(f"{azul}Tamires Dionizia De Jesus Bernardes --> RA: 3023200548{reset}")
+sleep(1)
+print(f"{azul}Lavínia De Souza Freitas --> RA: 3023202645{reset}")
+sleep(1)
+print(f"{azul}Marina Romera Amorim --> RA: 3023108400{reset}")
+sleep(1)
+print(f"{azul}Riani Katelin Da Silva {reset}")
 print(" ")
-input("Para sair aperte 'Enter'")
+sleep(1)
+input(f"{laranja}Para sair aperte 'Enter'{reset}")
 print(" ")
